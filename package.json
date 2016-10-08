@@ -1,0 +1,25 @@
+{
+  "name": "conspectio_website",
+  "version": "1.0.0",
+  "description": "website featuring conspectio, a library that facilitates many to many live stream broadcasts",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/productdana/conspectioWebsite.git"
+  },
+  "author": "Dana Tran, Simon Situ, Diana Cheung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/productdana/conspectioWebsite/issues"
+  },
+  "homepage": "https://github.com/productdana/conspectioWebsite#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  }
+}
