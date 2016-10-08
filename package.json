@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/productdana/conspectioWebsite#readme",
   "dependencies": {
-    "express": "^4.14.0",
-    "nodemon": "^1.11.0",
-    "path": "^0.12.7"
+    "bulma": "0.2.1",
+    "express": "4.14.0",
+    "nodemon": "1.11.0",
+    "path": "0.12.7"
   }
 }
