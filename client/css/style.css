@@ -1,3 +1,22 @@
 body {
 	/*background-color: blue;*/
 }
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+#mesh {
+	margin-left: 30px;
+}
+
+#onetomany {
+	margin-left: 80px;
+}
+
+#conspectiomodel {
+	margin: 0 auto;
+}
+.topmargin {
+	margin-top: 20px;
+}
