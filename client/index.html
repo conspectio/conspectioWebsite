@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-	<title>conspectio - many-to-many simulcast</title>
+	<title>conspectio - multiple simulcasts</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.1/css/bulma.css">
@@ -12,15 +12,9 @@
   <nav class = 'nav'>
     <div class="nav-left">
       <a class="nav-item is-brand" href="#">
-        <!-- <img src="/images/bulma-type.png" alt="Bulma logo"> -->
         conspectio
       </a>
     </div>
-
-
-<!--     <div id = 'pagetop'>
-      <a href = '#'>conspectio</a>
-    </div> -->
 
     <div class="nav-right nav-menu">
       <a class="nav-item" href="https://github.com/conspectio/conspectio">
@@ -45,27 +39,77 @@
   </nav>
 
 
-<!--   <header>
-    <h1>conspectio</h1>
-    <h4>Alpha Release</h4>
-    <hr>
-    <p>Many-to-many live stream broadcasts</p>
-    <a class="button is-primary" href = '#'>Find Out More</a>
-
-  </header> -->
-
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          conspectio
+        </h1>
+        <div class = 'center'>
+          <!-- <hr> -->
+        </div>
+        <h3 class="subtitle">
+          multiple one-to-many live stream broadcasts
+        </h3>
+ <!--        <p>Conspectio is currently under heavy development. We encourage you to try it out and let us know how we can make it better for you.</p> -->
+      </div>
+    </div>
+  </section>
 
   <section class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title">
+        <h2 class="title">
           Provide a multi-perspective experience.
-        </h1>
-        <p>Conspectio is a library that facilitates many-to-many live stream broadcasts, built with <a href = 'https://webrtc.org/'>WebRTC</a> and <a href = 'http://socket.io/'>Socket.io</a>.</p>
+        </h2>
+        <p>conspectio is a library that facilitates multiple one-to-many live stream broadcasts, built with <a href = 'https://webrtc.org/'>WebRTC</a> and <a href = 'http://socket.io/'>Socket.io</a>.</p>
+        <br>
         <a class="button is-primary" href = 'https://github.com/conspectio/conspectio'>Get Started!</a>
+        <hr>
       </div>
     </div>
   </section>
+
+
+  <section class="section has-text-centered">
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">How are we different?</h1>
+        <br>
+
+      </div>
+      <div>
+        <h2 class="subtitle">Traditional Models</h2>
+        <p>Traditionally, WebRTC is used for direct peer connections between two parties, where communication is bidirectional. </p>
+        <p>Common uses include multi-party conferencing using the mesh model, or broadcasting a live stream using the one-to-many model.</p>
+        <br>
+        <br>
+
+        <div class="tile is-ancestor">
+          <br>
+          <div class="tile is-5 box center">
+            <img id = 'mesh' src = "src/mesh.png">
+            <br>
+            <img id = 'onetomany' src = "src/oneToMany.png">
+          </div>
+          
+        </div>
+
+        <br>
+        <br>
+        <h2 class="subtitle">conspectio</h2>
+        <p class = 'topmargin'>With conspectio, you can implement multiple one-to-many broadcasts in the same display for the viewer. </p>
+        <p>Want to show multiple perspectives at a football game? How about different performers at a music festival? Conspectio can help you do that!</p>
+        <br>
+
+        <div class="tile is-4 box center">
+          <img id = 'conspectiomodel' src = "src/manyOneToMany.png">
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
 
   <footer class = 'footer'>
     <div class = 'container'>
