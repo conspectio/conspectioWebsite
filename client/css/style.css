@@ -20,3 +20,9 @@ body {
 .topmargin {
 	margin-top: 20px;
 }
+#npm {
+	width: 200px;
+}
+.shorthr {
+	width: 5%;
+}
