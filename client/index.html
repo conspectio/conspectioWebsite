@@ -18,7 +18,7 @@
     </div>
 
     <div class="nav-right nav-menu">
-      <a class="nav-item" href="https://github.com/conspectio/conspectioModule">
+      <a class="nav-item" href="https://github.com/conspectio/conspectio">
         <span class="icon">
           <i class="fa fa-github"></i>
         </span>GitHub
@@ -44,7 +44,7 @@
           <!-- <hr> -->
         </div>
         <h3 class="subtitle">
-          multiple one-to-many live stream broadcasts
+          scalable one-to-many live streaming
         </h3>
  <!--        <p>Conspectio is currently under heavy development. We encourage you to try it out and let us know how we can make it better for you.</p> -->
       </div>
@@ -57,7 +57,7 @@
         <h2 class="title">
           Provide a multi-perspective experience.
         </h2>
-        <p>conspectio is a library that facilitates multiple one-to-many live stream broadcasts, built with <a href = 'https://webrtc.org/'>WebRTC</a> and <a href = 'http://socket.io/'>Socket.io</a>.</p>
+        <p>conspectio is a library that facilitates scalable one-to-many live stream broadcasts, built on top of <a href = 'https://webrtc.org/'>WebRTC</a> and <a href = 'http://socket.io/'>Socket.io</a>.</p>
         <br>
         <a class="button is-primary" href = '#start'>Get Started!</a>
         <hr>
@@ -81,12 +81,12 @@
         <br>
         <br>
 
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor center">
           <br>
-          <div class="tile is-5 box center">
-            <img id = 'mesh' src = "src/mesh.png">
+          <div class="tile is-5 box center ">
+              <img id = 'mesh' src = "src/mesh.png" >
             <br>
-            <img id = 'onetomany' src = "src/oneToMany.png">
+            <img id = 'onetomany' src = "src/oneToMany.png" >
           </div>
           
         </div>
@@ -101,12 +101,31 @@
         <div class="tile is-4 box center">
           <img id = 'conspectiomodel' src = "src/manyOneToMany.png">
         </div>
-        <!-- <hr> -->
+        <hr>
       </div>
   
     </div>
   </section>
 
+  <section class="hero">
+    <div class="hero-body">
+    <!-- <hr> -->
+      <div class="container has-text-centered">
+        <h2 class="title">
+          Scale live streaming without additional servers.
+        </h2>
+
+        <p>Scaling to many users typically requires additional servers, but Conspectio can scale without them. With Conspectio, a direct WebRTC peer connection is made between the broadcaster and first viewer. Every viewer after grabs its stream from the prior viewer. Using this relay model, Conspectio allows you to scale beyond WebRTC's 1:10 peer connection constraint.</p>
+        <br>
+        <br>
+        <div class="tile is-8 box center">
+          <figure class="image is-640x480 ">
+            <img id = 'relaymodel' src = "src/relayModel.png">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="hero is-primary" id = 'start'>
     <div class="hero-body">
@@ -125,9 +144,9 @@
         <h3 class = 'subtitle'>
           Visit our GitHub for full installation instructions
         </h3>
-        <pre id="npm" class = 'center'><code>npm install conspectio</code></pre>
+        <pre id="npm" class = 'center'><code><a href = 'https://www.npmjs.com/package/conspectio' target = '_blank'>npm install conspectio</a></code></pre>
         <br>
-        <a class="button" href = 'https://github.com/conspectio/conspectioModule'>
+        <a class="button" href = 'https://github.com/conspectio/conspectio'>
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>
@@ -136,6 +155,7 @@
 
       </div>
     </div>
+
   </section>
 
 
