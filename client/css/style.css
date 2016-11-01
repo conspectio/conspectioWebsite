@@ -22,7 +22,7 @@ body {
 	margin-left: 80px;
 }
 
-#conspectiomodel {
+#relaypeople {
 	margin: 0 auto;
 }
 .topmargin {
@@ -33,4 +33,13 @@ body {
 }
 .shorthr {
 	width: 5%;
+}
+
+#conspectioLogo {
+	max-width: 60%;
+	margin: 0 auto;
+}
+.containersmall {
+	max-width: 80%;
+	margin: 0 auto;
 }
