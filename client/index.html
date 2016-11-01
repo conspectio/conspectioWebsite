@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
 	<title>conspectio - multiple simulcasts</title>
+  <link rel='shortcut icon' href='src/conspectioFavicon.ico' type='image/x-icon'/ >
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.1/css/bulma.css">
@@ -34,19 +35,16 @@
   </nav>
 
 
-  <section class="hero is-primary">
+  <section class="hero is-primary ">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title">
-          conspectio
-        </h1>
-        <div class = 'center'>
-          <!-- <hr> -->
-        </div>
-        <h3 class="subtitle">
+        <figure class="image ">
+          <img id = 'conspectioLogo' src = "src/conspectioLogoWhiteGrayRelay.png" alt = 'conspectioLogo'>
+        </figure>
+        <br>
+        <h2 class="subtitle">
           scalable one-to-many live streaming
-        </h3>
- <!--        <p>Conspectio is currently under heavy development. We encourage you to try it out and let us know how we can make it better for you.</p> -->
+        </h2>
       </div>
     </div>
   </section>
@@ -57,7 +55,9 @@
         <h2 class="title">
           Provide a multi-perspective experience.
         </h2>
-        <p>conspectio is a library that facilitates scalable one-to-many live stream broadcasts, built on top of <a href = 'https://webrtc.org/'>WebRTC</a> and <a href = 'http://socket.io/'>Socket.io</a>.</p>
+        <div class = 'containersmall'>
+          <p>Conspectio is an open-source library that facilitates grouping multiple live stream broadcasts and scaling using a decentralized p2p model, built on top of <a href = 'https://webrtc.org/'>WebRTC</a> and <a href = 'http://socket.io/'>Socket.io</a>.</p>
+        </div>
         <br>
         <a class="button is-primary" href = '#start'>Get Started!</a>
         <hr>
@@ -76,8 +76,10 @@
       </div>
       <div>
         <h2 class="subtitle">Traditional Models</h2>
-        <p>Traditionally, WebRTC is used for direct peer connections between two parties, where communication is bidirectional. </p>
-        <p>Common uses include multi-party conferencing using the mesh model, or broadcasting a live stream using the one-to-many model.</p>
+        <div class = 'containersmall'>
+          <p>Traditionally, WebRTC is used for direct peer connections between two parties, where communication is bidirectional. </p>
+          <p>Common uses include multi-party conferencing using the mesh model, or broadcasting a live stream using the one-to-many model.</p>
+        </div>
         <br>
         <br>
 
@@ -88,18 +90,18 @@
             <br>
             <img id = 'onetomany' src = "src/oneToMany.png" >
           </div>
-          
         </div>
 
         <br>
         <br>
         <h2 class="subtitle">conspectio</h2>
-        <p class = 'topmargin'>With conspectio, you can implement multiple one-to-many broadcasts in the same display for the viewer. </p>
-        <p>Want to show multiple perspectives at a football game? How about different performers at a music festival? Conspectio can help you do that!</p>
+        <div class = 'containersmall'>
+          <p class = 'topmargin'>With Conspectio, you can implement multiple one-to-many broadcasts in the same display for the viewer. Want to show multiple perspectives at a football game? How about different performers at a music festival? Conspectio can help you do that!</p>
+        </div>
         <br>
 
         <div class="tile is-4 box center">
-          <img id = 'conspectiomodel' src = "src/manyOneToMany.png">
+          <img id = 'relaypeople' src = "src/relayPeople.png">
         </div>
         <hr>
       </div>
@@ -109,18 +111,18 @@
 
   <section class="hero">
     <div class="hero-body">
-    <!-- <hr> -->
       <div class="container has-text-centered">
         <h2 class="title">
-          Scale live streaming without additional servers.
+          Scale live streaming with a p2p, decentralized model.
         </h2>
-
-        <p>Scaling to many users typically requires additional servers, but Conspectio can scale without them. With Conspectio, a direct WebRTC peer connection is made between the broadcaster and first viewer. Every viewer after grabs its stream from the prior viewer. Using this relay model, Conspectio allows you to scale beyond WebRTC's 1:10 peer connection constraint.</p>
+        <div class = 'containersmall'>
+          <p>Scaling to many users typically requires additional servers, but Conspectio can increase the number of viewers using a relay model. With Conspectio, a direct WebRTC peer connection is made between the broadcaster and first viewer. Every viewer after grabs its stream from the prior viewer. This reduces the load on the broadcaster by redistributing it among the relayers. Using this relay model, Conspectio allows you to scale beyond WebRTC's 1:10 peer connection constraint.</p>
+        </div>
         <br>
         <br>
         <div class="tile is-8 box center">
           <figure class="image is-640x480 ">
-            <img id = 'relaymodel' src = "src/relayModel.png">
+            <img id = 'relaydiagram' src = "src/relayDiagram.png">
           </figure>
         </div>
       </div>
@@ -140,7 +142,6 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
-
         <h3 class = 'subtitle'>
           Visit our GitHub for full installation instructions
         </h3>
